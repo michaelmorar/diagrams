@@ -317,7 +317,7 @@
           <mxGeometry x="704" y="140" width="54.95" height="50" as="geometry" />
         </mxCell>
         <mxCell id="3FlG1rzbiK8Vo94gnQx5-1" value="&lt;b&gt;Digital Experience&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontFamily=Tahoma;fillColor=#D4E1F5;fontStyle=0" parent="1" vertex="1">
-          <mxGeometry x="280" y="289" width="410" height="90" as="geometry" />
+          <mxGeometry x="280" y="289" width="270" height="90" as="geometry" />
         </mxCell>
         <mxCell id="3FlG1rzbiK8Vo94gnQx5-2" value="&lt;b&gt;Core&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=0;fontFamily=Tahoma;align=center;verticalAlign=top;fillColor=#E0E0E0;" parent="1" vertex="1">
           <mxGeometry x="279" y="409" width="261" height="121" as="geometry" />
@@ -385,14 +385,14 @@
         <mxCell id="YldnekAeGv4GLBirxxXM-21" value="GL/Cash Management" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=0" vertex="1" parent="1">
           <mxGeometry x="697" y="568" width="120" height="34" as="geometry" />
         </mxCell>
-        <mxCell id="YldnekAeGv4GLBirxxXM-23" value="Data Ingestion" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=0" vertex="1" parent="1">
-          <mxGeometry x="550" y="325" width="120" height="44" as="geometry" />
-        </mxCell>
         <mxCell id="YldnekAeGv4GLBirxxXM-24" value="&lt;b&gt;Customer Relationship Management&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontFamily=Tahoma;fillColor=#bac8d3;fontStyle=0;strokeColor=#23445d;" vertex="1" parent="1">
           <mxGeometry x="561" y="479" width="110" height="61" as="geometry" />
         </mxCell>
         <mxCell id="YldnekAeGv4GLBirxxXM-25" value="Identity and Access Management" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Tahoma;fontStyle=0" vertex="1" parent="1">
           <mxGeometry x="711.45" y="334" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="YldnekAeGv4GLBirxxXM-26" value="&lt;b&gt;Data Ingestion&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=middle;align=center;fontFamily=Tahoma;fillColor=#6d8764;fontStyle=0;strokeColor=#3A5431;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="571" y="290" width="110" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
