@@ -13,6 +13,35 @@ Let’s look in more detail at this concept. OOP has four key characteristics:
 These are perhaps lengthy words for the elegant concepts to which they refer. Let's talk about each. 
 
 ## Encapsulation 
-Perhaps one of object-orientated programming's most important features. Everything about an object - its attributes and behaviours - are wrapped up in a protective casing. No robot can see what the other is carrying (unless it chooses to reveal it) and none can issues commands to the other (again, unless this is desired). Changes or commands issued to one robot does not affect another. Encapsulation is about protecting an object from unexpected side-effects. It is also about protecting information - data fields can be marked as public or private. 
+Perhaps one of object-orientated programming's most important features. Everything about an object - its attributes and behaviours - are wrapped up in a protective casing. No robot can see what the other is carrying (unless it chooses to reveal it) and none can issues commands to the other (again, unless this is desired). Changes or commands issued to one robot do not affect another. 
+Encapsulation is about protecting an object from unexpected side-effects. It is also about protecting information - data fields can be marked as public or private. 
+
+In code, encapsulation involves wrapping data fields and methods in a single unit, usually a class and restricting direct access using access modifiers. For example, private fields with public getters and setters.
+
+e.g., in Java
+```
+public class Robot {
+  private String id; // private = restricted access
+
+  // Getter
+  public String getId() {
+    return id;
+  }
+
+  // Setter
+  public void setId(String newId) {
+    this.id = newId;
+  }
+}
+```
 
 ## Inheritance 
+The process of creating a new class (child) that inherits attributes and methods from an existing class (parent), thereby promoting code reuse. For example, a Car class inherits from a Vehicle class.
+
+## Polymorphism
+It allows methods to perform differently based on the object they are invoked on. When two types share an inheritance chain, they can be used interchangeably with no errors.
+
+## Abstraction
+This is the process of hiding implementation details and showing only the essential features of an object. For example, a Vehicle class with an abstract stop method.
+
+
