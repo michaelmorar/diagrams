@@ -1,19 +1,44 @@
 # What is object-oriented programming? 
 In the simplest mode, when we program something, we provide a set of instructions for it to follow – advance ten paces, turn right, and finally pick up the key. Setting up this simple set of commands is called ‘imperative’ programming. An imperative program may have thousands of steps. In a program these steps invariably work with data – creating, reading, changing, and deleting pieces of information as they execute each step in sequence. 
-Many imperative languages are successful and rightfully so. But the larger and more complex systems become, the messier and more difficult it is for developers to keep track of which commands are using which data. Object-orientated programs solve offer friendlier approach to the humans who must write them.     
-When describing it, I prefer to think of it first as a way of thinking rather than a way of developing. We take things that have something in common, commands and the data upon which they operation, and chunk them into recognisable entities. In this way, software programs with their bits, bytes, and machine instructions become represented as things and ideas in the real world. 
-Our list of instructions of advancing some paces before picking up a key, and the status of having they or not could be rolled together into a “robot” object. Now every command or set of commands – the behaviours, and everything about the thing – attributes represent a class of thing – a “robot”. We work with the Robot class and in for example a game, we can create as many copies – or instances – of that class, each the same but independent of the other. 
-Object-orientated programming concentrates code into “classes” that would otherwise be redundant. 
-Let’s look in more detail at this concept. OOP has four key characteristics: 
+
+## The problem with imperative programming 
+### It's difficult to change
+Consider a small start-up business, nimble and flexible, able to change, add products and services, and improve quickly. But the larger it grows, the more staff, departments, and bureaucracy it adds, the slower and clunkier it becomes. Change is cumbersome the company cannot react to shifts in the market. An established imperative system is like a century-old corporation, firmly fixed in its ways, waiting for a young disruptor to unseat it. 
+
+Imperative languages are successful and rightfully so. But the larger and more complex systems become, the messier and more difficult it is for developers to keep track of which commands are doing what with which data. A large imperative system is a monolith whose time-to-market increases until even replacing comes at great expense. 
+
+### It doesn't encourage reuse
+Imagine USB drives or web cameras that only work on a specific computer. The company manufacturing such products must keep a potentially infinite line or risk failure. Instead, most peripheral devices work on any computer. Companies like Cisco and Intel became successful because they produced devices and chips that worked on any PC. Reuse is crucial. 
+
+Imperative functions and routines use global variables. When executed, they change the state of the entire program meaning they cannot be reused without fully understanding the side-effects. This paradigm works well for a specific task, but does not promote reuse. 
+
+### Error-prone and difficult to read
+The detailed, step-by-step nature of imperative code can make it harder to understand the overall logic, especially when dealing with complex control flows, leading to poor code maintainability.
+
+Modifying variables directly can introduce unintended side effects, making it more likely to introduce errors when changing parts of the code. 
+
+## How does object-oriented programming work?
+Object-orientated programming offers a friendlier approach to the humans who must build and maintain software. 
+
+When describing it, I prefer to think of it first as a way of thinking rather than a way of coding. We take things that have something in common, commands and the data upon which they operation, and chunk them into recognisable entities. 
+
+In this way, software programs with their bits, bytes, and machine instructions become represented as real-world things and ideas.
+
+Our list of instructions of advancing some paces before picking up a key, and the status of having a key or not could be rolled together into a “robot” object. Now every command or set of commands – the behaviours, and everything about the thing – attributes represent a class of the thing – a “robot”. 
+
+Object-orientated programming concentrates code that would otherwise be redundant into “classes”.
+
+Let’s look in more detail at this concept. Object-oriented programming has four key characteristics: 
 1. Encapsulation (reduce complexity, increase reusablility) 
 2. Inheritance (eliminate redundant code) 
-3. Polymorphism (eliminate switch, if-else) 
+3. Polymorphism (hierarchies of things) 
 4. Abstraction (reduce complexity, isolate change impact)
 
 These are perhaps lengthy words for the elegant concepts to which they refer. Let's talk about each. 
 
-## Encapsulation 
+### Encapsulation 
 Perhaps one of object-orientated programming's most important features. Everything about an object - its attributes and behaviours - are wrapped up in a protective casing. No robot can see what the other is carrying (unless it chooses to reveal it) and none can issues commands to the other (again, unless this is desired). Changes or commands issued to one robot do not affect another. 
+
 Encapsulation is about protecting an object from unexpected side-effects. It is also about protecting information - data fields can be marked as public or private. 
 
 In code, encapsulation involves wrapping data fields and methods in a single unit, usually a class and restricting direct access using access modifiers. For example, private fields with public getters and setters.
@@ -36,7 +61,28 @@ public class Robot {
 ```
 
 ## Inheritance 
-The process of creating a new class (child) that inherits attributes and methods from an existing class (parent), thereby promoting code reuse. For example, a Car class inherits from a Vehicle class.
+The process of creating a new class (child) that inherits attributes and methods from an existing class (parent), thereby promoting code reuse. For example, a Car class inherits from a Vehicle class, taking all of its parents classes attributes and behaviours, and adding some of its own. 
+
+e.g., in Python 
+
+```
+class Animal:
+    def __init__(self, name):
+      
+      	# Storing the name of the animal
+        self.name = name  
+
+    def sound(self):      
+        raise NotImplementedError("I need a sound!")
+
+class Cow(Animal):
+    def sound(self):
+      
+        # Cow-specific sound
+        return "Moo!"
+```
+
+Inheritance saves us having to define a Cow class from scratch. We did not need to define the "name" attribute, we only needed to state that it inherits from the class Animal, and therefore, all animals have a name. 
 
 ## Polymorphism
 It allows methods to perform differently based on the object they are invoked on. When two types share an inheritance chain, they can be used interchangeably with no errors.
