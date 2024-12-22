@@ -73,7 +73,7 @@ class Animal:
         self.name = name  
 
     def sound(self):      
-        raise NotImplementedError("I need a sound!")
+        return "I need a sound"
 
 class Cow(Animal):
     def sound(self):
@@ -82,12 +82,39 @@ class Cow(Animal):
         return "Moo!"
 ```
 
-Inheritance saves us having to define a Cow class from scratch. We did not need to define the "name" attribute, we only needed to state that it inherits from the class Animal, and therefore, all animals have a name. 
+In object-oriented programming, we call this an 'is-a' relationship. A Car is-a Vehicle. A Cow is-an Animal. 
+
+Inheritance saves us having to define a Cow class from scratch. We did not need to define the "name" attribute, we only needed to state that it inherits from the class Animal. This is called a "has-a" relationship - A Cow 'has-a' ```name```.  
+
+Any programmer that adds more types of Animals to the program can do so focussing only on the attributes and behaviours specific to that subclass - automatic reuse without repeating a line of code. 
 
 ## Polymorphism
+From the Greek "poly" meaning many, and "morph" meaning form, "polymorphism" is the shapeshifter in object-oriented programming. 
+
 It allows methods to perform differently based on the object they are invoked on. When two types share an inheritance chain, they can be used interchangeably with no errors.
 
-## Abstraction
-This is the process of hiding implementation details and showing only the essential features of an object. For example, a Vehicle class with an abstract stop method.
+To extend our animal example: 
+```
+class Sheep(Animal):
+    def sound(self):
+      
+        # Sheep-specific sound
+        return "Baa!"
+```
 
+Calling the ```sound()``` method on any object that inherited from Animal will work. We can instruct all objects of the ```Animal``` class to ```sound()```, and whether they are ```Cow```, a ```Sheep```, a ```Goat```, or a ```Pig```, they will respond with a farmyard cacophony. 
+
+
+## Abstraction
+This is the process of hiding implementation details and showing only the essential features of an object. A concrete example is an electric doorbell - a device with a simple push-button interface. 
+
+When we press the button on a doorbell, we don't care how its internal circuits or mechanisms work, we only need to know it has a button and (hopefully) makes a sound. We can replace a doorbell with any other on the market without needing to explain to friends, families, visitors, and (unfortunately) door-to-door salespeople, how the new bell works. 
+
+Let's go back to our farmyard and switch back to Java for the next example. 
+
+```
+abstract class Animal {
+  public abstract void animalSound();
+}
+```
 
