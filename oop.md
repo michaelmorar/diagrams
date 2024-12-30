@@ -118,3 +118,59 @@ abstract class Animal {
 }
 ```
 
+Abstraction allows us to define a class' expected attributes and behaviours but leaves the details to the subclasses that implement it. 
+
+e.g.,
+
+```
+abstract class Animal {
+  public abstract void animalSound();
+}
+
+public class Dog extends Animal {
+
+    @Override
+    public void animalSound() {
+        System.out.println("Woof!");
+    }
+
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.animalSound(); 
+    }
+}
+```
+NOTE: In Java, you cannot instantiate an abstract class. 
+
+## Object-oriented languages
+
+Object-orientated programming enjoys the support of the world's best known and widely used programming languages. Let's discuss some of these. These languages are by no means in any order, this is not a top-5. 
+
+### Python
+Python has risen from an obscure language used by students, scientists and tinkerers to include web and enterprise business applications. Python's crystal-clear syntax makes it easy to learn, yet its sophisticated native capabilities and huge range of libraries make it a useful for even advanced enginers. Python is widely used in various fields, including data science, machine learning, web development, and automation.
+
+### Java 
+Named for a strong, sweet coffee from the eponymous Indonesian island, Java is one of the few programming languages known by name to even those outside software engineering. Java is widely used in enterpise applications and Android apps. Java code can run on any Java Virtual Machine (JVM) making it portable across a multitude of platforms. 
+
+### C++ 
+The mother of object-oriented programming languages, C++ is the successor to the ubiquitous C language and the forerunner of Java and Microsoft's C#. 
+
+### Smalltalk 
+
+Smalltalk, despite lacking widespread commercial success, has had a profound and lasting impact on software design. Smalltalk and the engineers who championed it, pioneered ideas in object-oriented programming and design patterns that influence software engineering today. 
+
+At its core, Smalltalk is a pure object-oriented - everything including numbers, characters, and even code itself is an object. 
+Objects in Smalltalk interact with each other through messages, analagous to message-driven architectures we see at the application or microservice level in todays modern and cloud systems. Smalltalk also 
+
+Smalltalk was instrumental in popularizing the concept of object-oriented programming, which has become a dominant paradigm in software development. Its emphasis on objects, classes, inheritance, and polymorphism laid the foundation for many modern programming languages.
+Many of the design patterns commonly used today, such as the Model-View-Controller (MVC) architecture, have their roots in Smalltalk.
+
+Smalltalk's influence can be seen in many modern programming languages, including:
+
+- Java: Java borrowed heavily from Smalltalk's object-oriented concepts and syntax.
+- Objective-C: Objective-C was directly inspired by Smalltalk and is used for developing applications for Apple's macOS and iOS platforms.
+- Python: Python, while not directly derived from Smalltalk, shares some of its object-oriented principles and dynamic nature.
+
+### Objective-C
+Objective-C is the main programming language for writing software for Apple's OS X and iOS. Itself an example of inheritance, Objective-C borrowing from C and Smalltalk, to provide object-oriented capabilities and a dynamic runtime. 
+
