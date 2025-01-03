@@ -1,5 +1,15 @@
 # What is object-oriented programming? 
-In the simplest mode, when we program something, we provide a set of instructions for it to follow – advance ten paces, turn right, and finally pick up the key. Setting up this simple set of commands is called ‘imperative’ programming. An imperative program may have thousands of steps. In a program these steps invariably work with data – creating, reading, changing, and deleting pieces of information as they execute each step in sequence. 
+
+## In short 
+Consider building a house. You could gather bricks, glass, and timber and beging building every wall, window, and door from scratch. This would work eventually, but would be wasteful and labour-intensive. A better approach would be to use blueprints, divide the work into rooms, and maybe even pre-build some components like windows and doors. That is how object-oriented programming (OOP) works.
+
+Instead of writing code as a single, long set of instructions, you break it down into smaller, self-contained units called "objects." These objects can represent things like a "car" with properties like "color" and "speed," and actions like "drive" and "brake."
+
+Languages like Java, Python, and C++ use OOP. The big advantages are that you can reuse code, make changes more easily (since you're only modifying specific parts), and build complex systems more organized and efficiently. It's like having a set of pre-built LEGO bricks – you can combine them in different ways to create all sorts of things.
+
+## Object oriented programming  
+
+In the simplest mode, when we program something, we provide a set of instructions for it to follow – advance ten paces, turn right, and finally pick up the key. Setting up this simple set of commands is called 'imperative' programming. An imperative program may have thousands of steps. In a program these steps invariably work with data – creating, reading, changing, and deleting pieces of information as they execute each step in sequence. 
 
 ## The problem with imperative programming 
 ### It's difficult to change
@@ -149,11 +159,23 @@ Object-orientated programming enjoys the support of the world's best known and w
 ### Python
 Python has risen from an obscure language used by students, scientists and tinkerers to include web and enterprise business applications. Python's crystal-clear syntax makes it easy to learn, yet its sophisticated native capabilities and huge range of libraries make it a useful for even advanced enginers. Python is widely used in various fields, including data science, machine learning, web development, and automation.
 
+Python supports object-orientated programming's key pillars but is not exclusively object-orientated. It also supports functional and procedural programming paradigms. 
+
 ### Java 
 Named for a strong, sweet coffee from the eponymous Indonesian island, Java is one of the few programming languages known by name to even those outside software engineering. Java is widely used in enterpise applications and Android apps. Java code can run on any Java Virtual Machine (JVM) making it portable across a multitude of platforms. 
 
+
 ### C++ 
 The mother of object-oriented programming languages, C++ is the successor to the ubiquitous C language and the forerunner of Java and Microsoft's C#. 
+
+C++ excels as an Object-Oriented Programming (OOP) language due to several key features:
+ * Classes and Objects: C++ allows the creation of classes, blueprints for objects, encapsulating data (attributes) and methods (functions) that operate on that data. This promotes modularity and reusability.
+ * Inheritance: Classes can inherit properties and behaviors from other classes, fostering code reuse and a hierarchical structure. This reduces redundancy and improves code maintainability.
+ * Polymorphism: Objects of different classes can be treated as objects of a common base class, enabling flexibility and dynamic behavior. This allows for more adaptable and extensible code.
+ * Encapsulation: Data members of a class can be made private, restricting direct access and protecting data integrity. This enhances data security and reduces the risk of unintended modifications.
+ * Data Abstraction: C++ allows for the creation of abstract classes, which define a common interface without providing complete implementations. This promotes a high-level view of objects and their interactions.
+These features, combined with C++'s performance and efficiency, make it a powerful and versatile language for building complex, object-oriented systems.
+
 
 ### Smalltalk 
 
@@ -173,4 +195,10 @@ Smalltalk's influence can be seen in many modern programming languages, includin
 
 ### Objective-C
 Objective-C is the main programming language for writing software for Apple's OS X and iOS. Itself an example of inheritance, Objective-C borrowing from C and Smalltalk, to provide object-oriented capabilities and a dynamic runtime. 
+
+## Other types of programming 
+
+### Imperative programming  
+### Functional programming  
+### Object oriented programming  
 
