@@ -1,0 +1,76 @@
+@startuml
+set separator none
+title Policy Administration System - Containers
+
+left to right direction
+
+skinparam {
+  arrowFontSize 10
+  defaultTextAlignment center
+  wrapWidth 200
+  maxMessageSize 100
+}
+
+hide stereotype
+
+skinparam rectangle<<Documentation.Alfresco>> {
+  BackgroundColor #1168bd
+  FontColor #ffffff
+  BorderColor #0b4884
+  roundCorner 20
+  shadowing false
+}
+skinparam rectangle<<Documentation.Dialogue>> {
+  BackgroundColor #1168bd
+  FontColor #ffffff
+  BorderColor #0b4884
+  roundCorner 20
+  shadowing false
+}
+skinparam rectangle<<PolicyAdministrationSystem.Exceed>> {
+  BackgroundColor #1168bd
+  FontColor #ffffff
+  BorderColor #0b4884
+  roundCorner 20
+  shadowing false
+}
+skinparam rectangle<<EnterpiseIntegration.InteractionAPI>> {
+  BackgroundColor #1168bd
+  FontColor #ffffff
+  BorderColor #0b4884
+  roundCorner 20
+  shadowing false
+}
+skinparam rectangle<<PolicyAdministrationSystem>> {
+  BorderColor #0b4884
+  FontColor #0b4884
+  shadowing false
+}
+skinparam rectangle<<EnterpiseIntegration>> {
+  BorderColor #0b4884
+  FontColor #0b4884
+  shadowing false
+}
+skinparam rectangle<<Documentation>> {
+  BorderColor #0b4884
+  FontColor #0b4884
+  shadowing false
+}
+
+rectangle "Policy Administration System\n<size:10>[Software System]</size>" <<PolicyAdministrationSystem>> {
+  rectangle "==Exceed\n<size:10>[Container]</size>" <<PolicyAdministrationSystem.Exceed>> as PolicyAdministrationSystem.Exceed
+}
+
+rectangle "Enterpise Integration\n<size:10>[Software System]</size>" <<EnterpiseIntegration>> {
+  rectangle "==Interaction API\n<size:10>[Container]</size>" <<EnterpiseIntegration.InteractionAPI>> as EnterpiseIntegration.InteractionAPI
+}
+
+rectangle "Documentation\n<size:10>[Software System]</size>" <<Documentation>> {
+  rectangle "==Alfresco\n<size:10>[Container]</size>" <<Documentation.Alfresco>> as Documentation.Alfresco
+  rectangle "==Dialogue\n<size:10>[Container]</size>" <<Documentation.Dialogue>> as Documentation.Dialogue
+}
+
+PolicyAdministrationSystem.Exceed .[#707070,thickness=2].> EnterpiseIntegration.InteractionAPI : "<color:#707070>uses"
+EnterpiseIntegration.InteractionAPI .[#707070,thickness=2].> Documentation.Dialogue : "<color:#707070>uses"
+Documentation.Dialogue .[#707070,thickness=2].> Documentation.Alfresco : "<color:#707070>uses"
+@enduml

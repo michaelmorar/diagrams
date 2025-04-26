@@ -1,0 +1,10 @@
+11:25:06.992 [main] INFO  d.s.c.ls.C4LanguageServerLauncher - Starting Socket Connection
+11:25:07.019 [main] INFO  d.s.c.ls.C4LanguageServerLauncher - READY_TO_CONNECT
+11:25:07.028 [main] INFO  d.s.c.ls.C4LanguageServerLauncher - Launching C4LanguageServer started
+11:25:07.293 [main] INFO  d.s.c.ls.service.C4LanguageServer - getTextDocumentService
+11:25:07.397 [main] INFO  d.s.c.ls.service.C4LanguageServer - getTextDocumentService
+11:25:07.398 [main] INFO  d.s.c.ls.service.C4LanguageServer - getWorkspaceService
+11:25:07.411 [main] INFO  d.s.c.ls.service.C4LanguageServer - connect
+11:25:07.483 [pool-1-thread-1] INFO  d.s.c.ls.service.C4LanguageServer - initialize
+11:25:07.525 [ForkJoinPool.commonPool-worker-1] INFO  d.s.c.ls.service.C4WorkspaceService - executeCommand c4-server.autoformat.indent
+11:25:09.939 [pool-1-thread-1] INFO  d.s.c.ls.service.C4LanguageServer - setTrace off
