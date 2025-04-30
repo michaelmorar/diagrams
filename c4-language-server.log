@@ -1,10 +1,104 @@
-11:25:06.992 [main] INFO  d.s.c.ls.C4LanguageServerLauncher - Starting Socket Connection
-11:25:07.019 [main] INFO  d.s.c.ls.C4LanguageServerLauncher - READY_TO_CONNECT
-11:25:07.028 [main] INFO  d.s.c.ls.C4LanguageServerLauncher - Launching C4LanguageServer started
-11:25:07.293 [main] INFO  d.s.c.ls.service.C4LanguageServer - getTextDocumentService
-11:25:07.397 [main] INFO  d.s.c.ls.service.C4LanguageServer - getTextDocumentService
-11:25:07.398 [main] INFO  d.s.c.ls.service.C4LanguageServer - getWorkspaceService
-11:25:07.411 [main] INFO  d.s.c.ls.service.C4LanguageServer - connect
-11:25:07.483 [pool-1-thread-1] INFO  d.s.c.ls.service.C4LanguageServer - initialize
-11:25:07.525 [ForkJoinPool.commonPool-worker-1] INFO  d.s.c.ls.service.C4WorkspaceService - executeCommand c4-server.autoformat.indent
-11:25:09.939 [pool-1-thread-1] INFO  d.s.c.ls.service.C4LanguageServer - setTrace off
+18:57:14.339 [main] INFO  d.s.c.ls.C4LanguageServerLauncher - Starting Socket Connection
+18:57:14.379 [main] INFO  d.s.c.ls.C4LanguageServerLauncher - READY_TO_CONNECT
+18:57:14.388 [main] INFO  d.s.c.ls.C4LanguageServerLauncher - Launching C4LanguageServer started
+18:57:14.654 [main] INFO  d.s.c.ls.service.C4LanguageServer - getTextDocumentService
+18:57:14.740 [main] INFO  d.s.c.ls.service.C4LanguageServer - getTextDocumentService
+18:57:14.742 [main] INFO  d.s.c.ls.service.C4LanguageServer - getWorkspaceService
+18:57:14.755 [main] INFO  d.s.c.ls.service.C4LanguageServer - connect
+18:57:14.834 [pool-1-thread-1] INFO  d.s.c.ls.service.C4LanguageServer - initialize
+18:57:14.885 [pool-1-thread-1] INFO  d.s.c.l.s.C4TextDocumentService - didOpen file:///Users/MMIE/projects/diagrams/workspace.dsl
+18:57:14.886 [ForkJoinPool.commonPool-worker-1] INFO  d.s.c.l.s.C4TextDocumentService - --> getDiagnostics 0
+18:57:14.890 [ForkJoinPool.commonPool-worker-2] INFO  d.s.c.ls.service.C4WorkspaceService - executeCommand c4-server.autoformat.indent
+18:57:14.894 [pool-1-thread-1] INFO  d.s.c.l.s.C4TextDocumentService - documentColor
+18:57:14.895 [ForkJoinPool.commonPool-worker-2] INFO  d.s.c.l.s.C4TextDocumentService - --> getDocument
+18:57:14.978 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - createModel /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:14.979 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - Parsing...
+18:57:14.997 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onStartContext: workspace.dsl at linenumber 1, contextId: 1299320350, contextName WorkspaceDslContext
+18:57:14.997 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:14.998 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onStartContext: workspace.dsl at linenumber 3, contextId: 363647409, contextName ModelDslContext
+18:57:14.998 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.000 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onParsedModelElement identifier: pas, modelId: 1 at linenumber: workspace.dsl, 4
+18:57:15.000 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.001 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onStartContext: workspace.dsl at linenumber 4, contextId: 1434798591, contextName SoftwareSystemDslContext
+18:57:15.001 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.002 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onParsedModelElement identifier: exceed, modelId: 2 at linenumber: workspace.dsl, 5
+18:57:15.002 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.003 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onEndContext: workspace.dsl at linenumber 6, contextId: 1434798591, contextName SoftwareSystemDslContext
+18:57:15.003 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.006 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onParsedModelElement identifier: ei, modelId: 3 at linenumber: workspace.dsl, 8
+18:57:15.006 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.006 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onStartContext: workspace.dsl at linenumber 8, contextId: 564900970, contextName SoftwareSystemDslContext
+18:57:15.006 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.006 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onParsedModelElement identifier: enrich, modelId: 4 at linenumber: workspace.dsl, 9
+18:57:15.007 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.007 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onParsedModelElement identifier: interaction, modelId: 5 at linenumber: workspace.dsl, 10
+18:57:15.007 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.007 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onEndContext: workspace.dsl at linenumber 11, contextId: 564900970, contextName SoftwareSystemDslContext
+18:57:15.008 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.008 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onParsedModelElement identifier: pricing, modelId: 6 at linenumber: workspace.dsl, 13
+18:57:15.008 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.008 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onStartContext: workspace.dsl at linenumber 13, contextId: 807161465, contextName SoftwareSystemDslContext
+18:57:15.008 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.009 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onParsedModelElement identifier: wsrte, modelId: 7 at linenumber: workspace.dsl, 14
+18:57:15.010 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.010 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onEndContext: workspace.dsl at linenumber 15, contextId: 807161465, contextName SoftwareSystemDslContext
+18:57:15.011 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.012 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onParsedModelElement identifier: docs, modelId: 8 at linenumber: workspace.dsl, 17
+18:57:15.012 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.013 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onStartContext: workspace.dsl at linenumber 17, contextId: 339819477, contextName SoftwareSystemDslContext
+18:57:15.013 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.013 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onParsedModelElement identifier: dialogue, modelId: 9 at linenumber: workspace.dsl, 18
+18:57:15.013 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.014 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onParsedModelElement identifier: alfresco, modelId: 10 at linenumber: workspace.dsl, 19
+18:57:15.014 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.014 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onEndContext: workspace.dsl at linenumber 20, contextId: 339819477, contextName SoftwareSystemDslContext
+18:57:15.014 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.018 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onParsedRelationShip 2->5, identifier: null, at linenumber: workspace.dsl, 22
+18:57:15.018 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.022 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onParsedRelationShip 5->9, identifier: null, at linenumber: workspace.dsl, 23
+18:57:15.022 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.022 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onParsedRelationShip 9->10, identifier: null, at linenumber: workspace.dsl, 24
+18:57:15.023 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.023 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onEndContext: workspace.dsl at linenumber 26, contextId: 363647409, contextName ModelDslContext
+18:57:15.023 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.023 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onStartContext: workspace.dsl at linenumber 28, contextId: 2099728979, contextName ViewsDslContext
+18:57:15.023 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.036 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onParsedView View: Container-001 at linenumber workspace.dsl, 29
+18:57:15.036 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.036 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onStartContext: workspace.dsl at linenumber 29, contextId: 907576866, contextName ContainerViewDslContext
+18:57:15.036 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.044 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onEndContext: workspace.dsl at linenumber 32, contextId: 907576866, contextName ContainerViewDslContext
+18:57:15.044 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.045 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onStartContext: workspace.dsl at linenumber 34, contextId: 527536727, contextName StylesDslContext
+18:57:15.045 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.049 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onStartContext: workspace.dsl at linenumber 35, contextId: 1671425983, contextName ElementStyleDslContext
+18:57:15.049 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.051 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onParsedColor at linenumber workspace.dsl, 36
+18:57:15.051 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.051 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onParsedColor at linenumber workspace.dsl, 37
+18:57:15.051 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.052 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onEndContext: workspace.dsl at linenumber 39, contextId: 1671425983, contextName ElementStyleDslContext
+18:57:15.052 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.053 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onEndContext: workspace.dsl at linenumber 40, contextId: 527536727, contextName StylesDslContext
+18:57:15.053 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.053 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onEndContext: workspace.dsl at linenumber 41, contextId: 2099728979, contextName ViewsDslContext
+18:57:15.053 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.053 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - onEndContext: workspace.dsl at linenumber 43, contextId: 1299320350, contextName WorkspaceDslContext
+18:57:15.053 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.054 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c.ls.model.C4DocumentManager - Parsing finished
+18:57:15.054 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c4dsl.ls.model.C4DocumentModel - setWorkspace Name
+18:57:15.054 [ForkJoinPool.commonPool-worker-1] DEBUG d.s.c4dsl.ls.model.C4DocumentModel - setValid true
+18:57:15.055 [ForkJoinPool.commonPool-worker-1] INFO  d.s.c.l.s.C4TextDocumentService - <-- getDiagnostics
+18:57:15.055 [ForkJoinPool.commonPool-worker-2] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.055 [ForkJoinPool.commonPool-worker-2] INFO  d.s.c.l.s.C4TextDocumentService - <-- getDocument
+18:57:15.055 [ForkJoinPool.commonPool-worker-2] DEBUG d.s.c.ls.provider.C4ColorProvider - calcDocumentColors file:/Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.055 [ForkJoinPool.commonPool-worker-2] DEBUG d.s.c.ls.provider.C4ColorProvider -                    [36, 37]
+18:57:15.134 [pool-1-thread-1] INFO  d.s.c.l.s.C4TextDocumentService - codeLens
+18:57:15.135 [ForkJoinPool.commonPool-worker-2] INFO  d.s.c.l.s.C4TextDocumentService - --> getDocument
+18:57:15.135 [ForkJoinPool.commonPool-worker-2] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.135 [ForkJoinPool.commonPool-worker-2] INFO  d.s.c.l.s.C4TextDocumentService - <-- getDocument
+18:57:15.377 [pool-1-thread-1] INFO  d.s.c.l.s.C4TextDocumentService - semanticTokensFull
+18:57:15.377 [ForkJoinPool.commonPool-worker-2] INFO  d.s.c.l.s.C4TextDocumentService - --> getDocument
+18:57:15.377 [ForkJoinPool.commonPool-worker-2] DEBUG d.s.c.ls.model.C4DocumentManager - getModel file: /Users/MMIE/projects/diagrams/workspace.dsl
+18:57:15.378 [ForkJoinPool.commonPool-worker-2] INFO  d.s.c.l.s.C4TextDocumentService - <-- getDocument
+18:57:15.384 [ForkJoinPool.commonPool-worker-2] DEBUG d.s.c.l.p.C4SemanticTokenProvider - Semantik Tokens at [21, 8, 6, 14, 0, 0, 10, 11, 14, 0, 1, 8, 11, 14, 0, 0, 15, 8, 14, 0, 1, 8, 8, 14, 0, 0, 12, 8, 14, 0, 5, 18, 3, 14, 0]
